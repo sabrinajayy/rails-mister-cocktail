@@ -4,7 +4,7 @@
 <ul>
   <% @doses.each do |dose| %>
     <% ingredient = Ingredient.find(dose.ingredient_id) %>
-    <li><%=dose.description%> <%= ingredient.name%> <%= link_to 'Delete', cocktail_url, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+    <li><%=dose.description%> <%= ingredient.name%> <%= link_to 'Delete', dose_path(dose), method: :delete, data: { confirm: 'Are you sure?' } %></li>
   <% end %>
 </ul>
 
