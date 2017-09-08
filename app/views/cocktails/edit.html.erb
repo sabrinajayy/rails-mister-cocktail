@@ -1,17 +1,19 @@
-<div class="form-container">
-  <h1>Editing Cocktail</h1>
+<div class="form-wrapper">
+  <div class="form-container">
+    <h1>Editing Cocktail</h1>
 
-  <h2><%= @cocktail.name %></h2>
-  <ul>
-    <% @doses.each do |dose| %>
-      <% ingredient = Ingredient.find(dose.ingredient_id) %>
-      <li><%=dose.description%> <%= ingredient.name%> <%= link_to 'Delete', dose_path(dose), method: :delete, data: { confirm: 'Are you sure?' } %></li>
-    <% end %>
-  </ul>
+    <h2><%= @cocktail.name %></h2>
+    <ul>
+      <% @doses.each do |dose| %>
+        <% ingredient = Ingredient.find(dose.ingredient_id) %>
+        <li><%=dose.description%> <%= ingredient.name%> <%= link_to 'Delete', dose_path(dose), method: :delete, data: { confirm: 'Are you sure?' } %></li>
+      <% end %>
+    </ul>
 
-  <%= render 'form', cocktail: @cocktail %>
+    <%= render 'form', cocktail: @cocktail %>
 
 
-  <%= link_to 'Show', @cocktail %> |
-  <%= link_to 'Back', cocktails_path %>
+    <%= link_to 'Show', @cocktail %> |
+    <%= link_to 'Back', cocktails_path %>
+  </div>
 </div>
