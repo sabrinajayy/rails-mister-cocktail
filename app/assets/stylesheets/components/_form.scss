@@ -1,0 +1,21 @@
+.form-inputs {
+  border: white;
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: none;
+}
+
+.form-actions {
+  background-color: #fc1992;
+  color: white;
+  text-transform: uppercase;
+}
+
+.form-actions .btn-default {
+  background-color: #ff28a5;
+  border-color: #ff28a5;
+  opacity: 0.9;
+  &:hover {
+    opacity: 1;
+  }
+}

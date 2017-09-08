@@ -1,0 +1,44 @@
+.card {
+  height: 225px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  position: relative;
+  margin: 10px 5px;
+}
+.card-user {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+  border-radius: 50%;
+}
+.card-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  font-family: 'Pacifico', cursive;
+}
+
+.card-description h2 {
+  font-size: 24px;
+}
+.card-description p {
+  font-size: 14px;
+  opacity: 1;
+}
+
+.card-link {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  width: 100%;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.card-link:hover {
+  opacity: 1;
+}
