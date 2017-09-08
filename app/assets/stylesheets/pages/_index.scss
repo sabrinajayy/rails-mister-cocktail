@@ -1,3 +1,8 @@
 // Import page-specific CSS files here.
 @import "home";
 @import "show";
+
+.form-container {
+  width: 600px;
+  margin: 60px 200px 20px 200px;
+}

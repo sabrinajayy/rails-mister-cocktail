@@ -22,6 +22,7 @@ class CocktailsController < ApplicationController
   # GET /cocktails/1/edit
   def edit
     @doses = @cocktail.doses
+    @photo = @cocktail.photo
   end
 
   # POST /cocktails
