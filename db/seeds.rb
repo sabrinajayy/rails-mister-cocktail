@@ -9,9 +9,6 @@
 require 'open-uri'
 require 'json'
 
-# drop database
-Ingredient.destroy_all
-
 puts "adding ingredients to list..."
 
 url = open('http://www.thecocktaildb.com/api/json/v1/1/list.php?i=list').read
