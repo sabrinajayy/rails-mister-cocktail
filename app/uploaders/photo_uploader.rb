@@ -2,8 +2,6 @@
 
 class PhotoUploader < CarrierWave::Uploader::Base
   include Cloudinary::CarrierWave
-  include RMagick or MiniMagick support:
-  include CarrierWave::RMagick
   include CarrierWave::MiniMagick
 
   process eager: true  # Force version generation at upload time.
