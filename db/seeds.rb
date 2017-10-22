@@ -18,6 +18,3 @@ list = ingredients["drinks"]
 list.each do |i|
   i.each { |_key, value| Ingredient.create(name: value) }
 end
-
-# ingredients = %w(lemon ice mint leaves redbull jagermeister sugar tonic gin rhum)
-# ingredients.each { |ingredient| Ingredient.create(name: ingredient) }
