@@ -1,6 +1,6 @@
 <div class="form-wrapper">
   <div class="form-container">
-    <h1>Editing Cocktail</h1>
+    <h1>Edit Your Cocktail</h1>
 
     <h2><%= @cocktail.name %></h2>
     <ul>
@@ -13,7 +13,7 @@
     <%= render 'form', cocktail: @cocktail %>
 
 
-    <%= link_to 'Show', @cocktail %> |
-    <%= link_to 'Back', cocktails_path %>
+    <%= link_to 'View Cocktail', @cocktail %> |
+    <%= link_to 'Home', cocktails_path %>
   </div>
 </div>
