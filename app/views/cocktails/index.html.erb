@@ -5,12 +5,9 @@
   <div class="container">
     <div class="cocktails-list">
       <div class="row">
-          <% if @cocktails.empty? %>
-            <p>You don't have any cocktails!</p>
-          <% else %>
             <% @cocktails.each do |cocktail| %>
               <div class="col-xs-12 col-sm-4">
-                <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path cocktail.photo %>') ">
+                <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path cocktail.photo unless cocktail.photo.blank? %>') ">
                   <div class="card-category"><%= cocktail.name %></div>
                   <div class="card-description">
                     <p><%= link_to 'View Recipe', cocktail, class: 'card-link btn btn-primary' %></p>
@@ -18,7 +15,6 @@
                 </div>
               </div>
             <% end %>
-          <% end %>
         </div>
     </div>
 
